@@ -66,6 +66,26 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test:  /\.(svg|eot|woff|ttf)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: "fonts",
+                            esModule: false,
+                        }
+                    }
+                ]
+            },
+            {
+                test: require.resolve('jquery'),/*استدعاءلمسار المجلد جيكوري من داخل المجلد node_modules */
+                loader: 'expose-loader',
+                options:{
+                    exposes:['$', 'jQuery'],
+                }
             }
         ],
     },

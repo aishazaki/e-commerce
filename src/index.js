@@ -12,5 +12,9 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
     /*الشيفرة صحيحة  لكنها غير ظاهرة لكائن الصفحة العام فلا تاثير لها 
     لحل المشكلة  قمنا بتنزيل expose-loader */
+
+    $(".add-to-cart-btn").click(function(){
+        alert('اضيف المنتج الى عربة الشراء')
+    });
 });
 

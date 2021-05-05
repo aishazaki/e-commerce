@@ -16,5 +16,7 @@ $(document).ready(function () {
     $(".add-to-cart-btn").click(function(){
         alert('اضيف المنتج الى عربة الشراء')
     });
+    /* لتعديل سنه الحفظ حتى لايكون ثابت ويبدو قديما مع الزمن */
+    $("#copyright").text('جميع الحقوق  محفوظه للمتجر سنة' + new Date().getFullYear());
 });
 

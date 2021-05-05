@@ -18,5 +18,13 @@ $(document).ready(function () {
     });
     /* لتعديل سنه الحفظ حتى لايكون ثابت ويبدو قديما مع الزمن */
     $("#copyright").text('جميع الحقوق  محفوظه للمتجر سنة' + new Date().getFullYear());
+
+
+    $('.product-option input[type="radio"] ').change(function(){
+        $(this).parents('.product-option').siblings().removeClass('active')
+        /*عند حدث التغير يجلب الاب ذو الصنف الذي بداخل القوسين ثم يجلب جميع اخوته المباشرين */
+        $(this).parents('.product-option').addClass('active');
+    
+    })
 });
 

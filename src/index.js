@@ -6,6 +6,12 @@ import 'jquery/dist/jquery.min';
 import 'popper.js/dist/popper.min';
 import 'bootstrap/dist/js/bootstrap.min.js'; // 'bootstrap'اختصار
 import '@fortawesome/fontawesome-free/js/all.min';
+
+import 'webpack-jquery-ui';
+import 'webpack-jquery-ui/css';
+
+import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
+
 /*$(document).ready(function ()   نلاحظ ان التابع ردي مشطوب وليس لخطأ فيه  
 $(function (){})بل يعمل بشكل جيد وله اختصار  مكافئ له وهو */
 $(document).ready(function () {
@@ -121,5 +127,21 @@ $(document).ready(function () {
         $("#credit-card-info").toggle();
     })
 
+    /* search  page */
+    //
+    $("#price-range").slider({
+        range: true, //true : تسمح بظهور مقبضين واحد للقيمة العلياوالاخر للدنيا
+                    //false: ظهور مقبض واحد لتحديد  قيمة  واحدة 
+        min: 50,
+        max: 1000,
+        step: 50,//مقدار الخطوةعند تحريك المقابض
+        values: [250, 800],// تحد يد القيم المبدأية
+       //slideعند  تغيير قيم المقابض ..نفذ تابع
+        slide: function(event, ui) {
+            $("#price-min").text(ui.values[0]);
+            $("#price-max").text(ui.values[1]);
+        }
+    })
 });
+
 

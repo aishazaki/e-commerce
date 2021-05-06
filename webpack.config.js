@@ -35,9 +35,9 @@ module.exports = {
                 use: [
                     {
                         loader: 'html-loader',
-                        options: {
-                            minimize: true,/*تفعيل ضغط الملف */
-                        }
+                       /*  options: {
+                            minimize: true,تفعيل ضغط الملف 
+                        } */
                     }
                 ]
 
@@ -94,6 +94,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
             template: "./src/index.html",/*مسارالملف الاصلي  */
+        }),
+        new HtmlWebpackPlugin({
+            filename: "checkout.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
+            template: "./src/checkout.html",/*مسارالملف الاصلي  */
         }),
         new HtmlWebpackPlugin({
             filename: "product.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */

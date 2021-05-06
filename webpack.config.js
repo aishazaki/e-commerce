@@ -96,12 +96,16 @@ module.exports = {
             template: "./src/index.html",/*مسارالملف الاصلي  */
         }),
         new HtmlWebpackPlugin({
+            filename: "product.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
+            template: "./src/product.html",/*مسارالملف الاصلي  */
+        }),
+        new HtmlWebpackPlugin({
             filename: "checkout.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
             template: "./src/checkout.html",/*مسارالملف الاصلي  */
         }),
         new HtmlWebpackPlugin({
-            filename: "product.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
-            template: "./src/product.html",/*مسارالملف الاصلي  */
+            filename: "payment.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
+            template: "./src/payment.html",/*مسارالملف الاصلي  */
         }),
         new MiniCssExtractPlugin({ filename: "css/style.css" }),
 

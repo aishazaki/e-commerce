@@ -498,7 +498,7 @@ h1.custom-heading {
     color: #555555;
 }
 
-input[type=email] {
+input[type=email], input[type=number] {
     direction: rtl;
     text-align: right;
 }
@@ -741,6 +741,29 @@ form .custom-table{
 }
 .custom-table .total-price .custom-text-muted{
     color: #a9a9a9;
+}
+/* **********************************************************
+************************************************************************
+payment page
+********************************************************************
+************************************************************* */
+
+.custom-input-details{
+    border-width: 2px;
+    border-radius: 3px;
+    height: 46px !important;
+    padding: 0px 16px;
+    font-size: 18px;
+    width: 97%;
+}
+#form-checkout .custom-form-control:active,
+#form-checkout .custom-form-control:focus{
+    border-color: #b86d07 !important;
+   
+    box-shadow:0 0 2px 0 #b86d07
+}
+#credit-card-info{
+    margin-right: 3%;
 }
 /* **********************************************************
 ************************************************************************

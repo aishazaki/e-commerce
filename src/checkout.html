@@ -118,7 +118,7 @@
                         </h1>
                     </div>
                     <div class="col-md-12">
-                        <form action="payment.html" id="form-checkout">
+                        <form action="payment.html" method="GET" id="form-checkout">
                             <table class="custom-table">
                                 <thead>
                                     <tr>
@@ -146,6 +146,7 @@
                                             400$
                                         </td>
                                         <td>
+                                            <input type="hidden" name="product1" value="تي شيرت رجالي من لاكوست">
                                             <select name="quantity" data-product-quantity class="form-control custom-form-control quantity">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -178,6 +179,7 @@
                                             300$
                                         </td>
                                         <td>
+                                            <input type="hidden" name="product2" value="تي شيرت اديداس">
                                             <select name="quantity" data-product-quantity class="form-control custom-form-control quantity">
                                                 <option value="1" selected>1</option>
                                                 <option value="2">2</option>

@@ -111,6 +111,10 @@ module.exports = {
             filename: "search.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
             template: "./src/search.html",/*مسارالملف الاصلي  */
         }),
+        new HtmlWebpackPlugin({
+            filename: "contact.html", /*اسم الملف الذي ستنتجه ويب باك  من عمليةالبناء */
+            template: "./src/contact.html",/*مسارالملف الاصلي  */
+        }),
         new MiniCssExtractPlugin({ filename: "css/style.css" }),
 
         new OptimizeCssAssetsPlugin({}),

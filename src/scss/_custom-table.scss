@@ -1,0 +1,39 @@
+//nesting التشعب: جعلالعناصرالابناء في نفس القاعدة كما في html ليسهلفهمها وقرائها
+.custom-table{
+    //تشعب من الدرجةالاولى
+    th, td { 
+        padding: 15px;
+        border-bottom: solid 1px #ebebeb;
+        border-top: solid 1px #ebebeb;
+        font-size: 120%;
+        // تشعب من الدرجةالثانية
+
+        &:first-child{
+            width: 50%;
+        }
+        &:not(:first-child){
+            text-align: center;
+        }
+    }
+   
+    th {
+        color: #c2c2c2;
+        font-weight: normal;
+
+        &:first-child{
+            padding-right: 20px;
+        }
+    }
+   
+   
+    tfoot {
+        td{
+            border-bottom: none;
+            font-size: 150%;
+        }
+    }
+}
+
+
+
+

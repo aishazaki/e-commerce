@@ -1,5 +1,8 @@
 /* import 'bootstrap/dist/css/bootstrap.min.css'; */
-import '@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
+import './scss/style.scss'
+/* import '@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css'; */
+//قمنا باستيراده داخل ملف custom.scss
+//import '@laylazi/bootstrap-rtl-scss/scss/bootstrap-rtl.scss';
 import './css/style.css';
 
 import 'jquery/dist/jquery.min';

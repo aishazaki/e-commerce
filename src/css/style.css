@@ -30,26 +30,14 @@ body {
     margin-top: 4px;
 }
 
-.custom-form-control, .custom-btn {
-    border: 1px solid #ebebeb;
-    box-shadow: none;
-    border-radius: 2px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    padding: 6px 16px 7px 16px;
-    color: #868686;
-}
+
 
 .custom-navbar .container .custom-form-control:focus {
     border-color: #c2101e;
     box-shadow: 0 0 2px 0 #c2101e;
 }
 
-.custom-btn:hover {
-    background-color: #d4d4d4;
-    border: 1px solid #bcbcbc;
-    color: #b86d07;
-}
+
 
 .categories .nav-link {
     border-right: 0;
@@ -190,34 +178,7 @@ body {
     font-size: 18px;
 }
 
-.sale {
-    color: white;
-    background-color: #53ccd7;
-    font-weight: bold;
-    position: absolute;
-}
 
-.sale.large {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    left: -15px;
-    top: -15px;
-    display: flex;
-    /*justify-content حتى تعمل*/
-    justify-content: center;
-    align-items: center;
-    font-size: 130%;
-    padding: 35px;
-    line-height: 90%;
-    flex-direction: column;
-    transform: rotate(-25deg);
-    /*negative= counter clockwise*/
-}
-
-#carousel-featured .product-details .sale.large span {
-    font-size: 14px;
-}
 
 .custom-carousel-indicators-primary {
     top: 235px;
@@ -349,16 +310,7 @@ h1.custom-heading {
     display: block;
 }
 
-.custom-thumbnail .sale {
-    padding: 5px 10px;
-    position: absolute;
-    left: 16px;
-    top: 14px;
-}
 
-.custom-thumbnail .sale::after {
-    content: '-';
-}
 
 .custom-carousel-indicators>li {
     width: 13px;
@@ -394,17 +346,7 @@ h1.custom-heading {
     margin-bottom: 8px;
 }
 
-.custom-btn-primary {
-    color: #f8ad47;
-    border-color: #f8ad47;
-    background-color: transparent;
-}
 
-.custom-btn-primary:hover, .custom-btn-primary:active, .custom-btn-primary:focus, .custom-btn-primary:active:focus, .custom-btn-primary:active:hover {
-    color: #b86d07;
-    border-color: #b86d07;
-    background-color: transparent;
-}
 
 .custom-pane h4, .custom-pane .product-details .price {
     font-style: 130%;
@@ -503,17 +445,7 @@ input[type=email], input[type=number] {
     text-align: right;
 }
 
-.custom-btn-primary2 {
-    background-color: #f8ad47;
-    border-color: #f8ad47;
-    color: #000;
-}
 
-.custom-btn-primary2:active, .custom-btn-primary2:hover, .custom-btn-primary2:focus, .custom-btn-primary2:active:focus, .custom-btn-primary2:active:hover {
-    background-color: #b86d07;
-    border-color: #b86d07;
-    color: #000;
-}
 
 #newsletter form input {
     background-color: #313131;
@@ -697,45 +629,14 @@ form .custom-table{
     width: 56px;
     padding: 0px 8px;
 }
-.custom-table th, .custom-table td{
-    padding: 15px;
-    border-bottom: solid 1px #ebebeb;
-    border-top: solid 1px #ebebeb;
-    font-size: 120%;
-}
-.custom-table th:first-child, .custom-table td:first-child{
-    width: 50%;
-}
-.custom-table th {
-    color: #c2c2c2;
-    font-weight: normal;
-}
-.custom-btn-danger{
-    color: #ff5a5f;
-    border-color: #ff5a5f;
-    background-color: transparent;
-    border-radius: 3px;
-}
-.custom-btn-danger:active,
- .custom-btn-danger:hover, 
- .custom-btn-danger:focus, .custom-btn-danger:active:focus,
-  .custom-btn-danger:active:hover {
-    background-color:transparent;
-    border-color: #c2101e;
-    color: #c2101e;
-}
+
+
 .custom-table .custom-media{
     margin-bottom: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
-.custom-table th:first-child{
-    padding-right: 20px;
-}
-.custom-table tfoot td{
-    border-bottom: none;
-    font-size: 150%;
-}
+
 .custom-table .total-price *{
     color: #000;
 }
@@ -796,25 +697,7 @@ search page
     cursor: pointer;
     font-weight: bold;
 }
-/* تنسيق مكزن البحث حسب السعر */
-.ui-slider{
-    margin: 25px 0 15px;
-    height: 2px !important;
-}
-/* المقابض */
-.ui-slider .ui-slider-handle{
-    background-color: #f8ad47 !important;
-    border: none !important;
-    border-radius: 50% !important;
-    height: 12px !important;
-    width: 12px !important;
-    top: -6px !important;
-}
-/* المجال */
-.ui-slider .ui-slider-range{
-    border: 1px solid #f8ad47 !important;
-    top: -1px !important;
-}
+
 .custom-pagination li a{
     border: 1px solid #ebebeb;
     width: 32px;
@@ -953,6 +836,9 @@ media-query
         color: #868686;
         font-weight: normal;
     }
+    .custom-thumbnail .overlay{
+        display: none;
+    }
     #copyright, #social-icons{
         width: 100%;
         text-align: center;
@@ -968,12 +854,6 @@ media-query
         margin: 10px;
         line-height: 40px;
         font-size: 20px;
-    }
-    /* search page */
-    .ui-slider .ui-slider-handle{
-        height: 20px !important;
-        width: 20px !important;
-        top: -10px !important;
     }
     /* contact page */
     #form-subscription{
@@ -1041,12 +921,7 @@ media-query
         padding-left: 15px;
         padding-right: 15px;
     }
-     /* search page */
-     .ui-slider .ui-slider-handle{
-        height: 20px !important;
-        width: 20px !important;
-        top: -10px !important;
-    }
+    /* search page */
     #search-pagination .custom-pagination{
         margin-right:47% ;
     }

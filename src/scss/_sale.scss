@@ -1,0 +1,46 @@
+//index page
+.sale {
+    color: white;
+    background-color: #53ccd7;
+    font-weight: bold;
+    position: absolute;
+}
+#carousel-featured .product-details {
+    .sale.large {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        left: -15px;
+        top: -15px;
+        display: flex;
+        //justify-content حتى تعمل
+        justify-content: center;
+        align-items: center;
+        font-size: 130%;
+        padding: 35px;
+        line-height: 90%;
+        flex-direction: column;
+        transform: rotate(-25deg);
+        //negative= counter clockwise
+
+        span {
+            font-size: 14px;
+        }
+    }
+    
+     
+}
+.custom-thumbnail {
+    .sale {
+        padding: 5px 10px;
+        position: absolute;
+        left: 16px;
+        top: 14px;
+
+        &:after {
+            content: '-';
+        }
+    }
+   
+}
+

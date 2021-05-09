@@ -1,0 +1,46 @@
+@import './variables';
+@import './custom-table';
+@import './mixins';
+@import './slider';
+@import './sale';
+@import './custom.scss';
+
+.custom-form-control, .custom-btn {
+    border: 1px solid #ebebeb;
+    box-shadow: none !important;
+    border-radius: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding: 6px 16px 7px 16px;
+    color: #868686;
+}
+.custom-btn:hover {
+    background-color: #d4d4d4;
+    border: 1px solid #bcbcbc;
+    color: $brand-primary-color-dark;
+}
+.custom-btn-primary {
+   @include button-style($brand-primary)
+}
+
+
+.custom-btn-primary2 {
+    background-color: $brand-primary !important;
+    border-color: $brand-primary !important;
+    color: #000;
+
+    &:active,
+    &:hover, 
+    &:focus, 
+    &:active:focus, 
+    &:active:hover {
+        background-color: $brand-primary-color-dark !important;
+        border-color: $brand-primary-color-dark !important;
+        color: #000;
+    }
+}
+
+
+.custom-btn-danger{
+    @include button-style($brand-danger)
+}

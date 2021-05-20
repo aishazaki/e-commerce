@@ -83,7 +83,10 @@ $(document).ready(function () {
         //حدث السعر الاجمالي لكل المنتجات بالصفحة
         $('#total-price-for-all-products').text( totalPriceForAllProducts + '$');
     };
-
+    /*product page */
+    $("#addToCartBtn").click(function(){
+        alert('اضيف المنتج الى عربة الشراء')
+    });
     /* payment page */
     /* البيانات الشخصية */
     var citiesByCountry = {
